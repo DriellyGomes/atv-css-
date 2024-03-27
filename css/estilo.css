@@ -1,0 +1,68 @@
+.container-template-mesclagem {
+    display: grid;
+    width: 70vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-auto-rows: 100px;
+    margin:auto;
+    border: 3px solid black;
+    gap: 5px;
+    
+}
+
+.item{
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.container-template-mesclagem .menu{
+    grid-column: 2 / 4;
+}
+
+.container-template-mesclagem .rodape{
+    grid-column: 1 / 4;
+}
+
+.container-template-mesclagem .itemrodape{
+    grid-column: 3 / 4;
+}
+
+
+.container-template-area{
+ 
+    display: grid;
+    width: 70vw;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "it1 it2 it2"
+    "it3 it4 it5"
+    "it6 it6 it6";
+
+}
+
+.container-template-area .logo{
+    grid-area: it1;
+}
+
+.container-template-area .menu{
+    grid-area: it2;
+}
+
+.container-template-area .mkt{
+    grid-area: it3;
+}
+
+.container-template-area .principal{
+    grid-area: it4;
+}
+
+.container-template-area .section{
+    grid-area: it5;
+}
+
+.container-template-area .rodape{
+    grid-area: it6;
+}
+
